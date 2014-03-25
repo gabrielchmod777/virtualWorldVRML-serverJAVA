@@ -28,7 +28,7 @@ public class Script_JS_world implements CommandTypeDependentInterpreter{
             runtime = new ScriptEngineManager().getEngineByName("javascript");
             javascript = new StringBuffer();
             
-            library = readFile("/home/gabriel/Work/3d-learning-env/implementare/L3DServer/library.js", StandardCharsets.UTF_8);
+            library = readFile("./library.js", StandardCharsets.UTF_8);
             
             System.out.println(">>>>> "+library);
             javascript.append(library);
