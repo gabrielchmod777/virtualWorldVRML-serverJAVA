@@ -7,8 +7,13 @@ function avatar(name) {
 	
 	}
 	
-	this.move = function(name, my,  mz) {
-		var toSend = "<client_plugin>./plugins/libAvatar.so</client_plugin><client_plugin_source>null</client_plugin_source><action>move</action><other_user>"+name+"</other_user><y>"+my+"</y><z>"+mz+"</z>";
+	this.move = function(mx, my,  mz) {
+		var toSend = "<client_plugin>./plugins/libAvatar.so</client_plugin><client_plugin_source>null</client_plugin_source><action>move</action><other_user>"+name+"</other_user><x>"+mx+"</x><y>"+my+"</y><z>"+mz+"</z>";
+		return toSend;
+	}
+
+	this.rotate = function(axis, degrees) {
+		var toSend = "<client_plugin>./plugins/libAvatar.so</client_plugin><client_plugin_source>null</client_plugin_source><action>rotate</action><other_user>"+name+"</other_user><axis>"+axis+"</axis><degrees>"+degrees+"</degrees>";
 		return toSend;
 	}
 	
