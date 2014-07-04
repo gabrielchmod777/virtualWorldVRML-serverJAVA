@@ -56,6 +56,7 @@ implements BasicServerOperations{
 	public void sendResponse(String response) {
 		System.out.println("RESP="+response);
 		this.ostream.println(URLEncoder.encode(response));
+		//this.ostream.println(response);
 	}
 
 	/**

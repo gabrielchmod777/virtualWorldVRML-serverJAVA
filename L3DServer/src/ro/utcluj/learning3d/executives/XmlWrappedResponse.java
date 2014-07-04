@@ -21,11 +21,11 @@ public class XmlWrappedResponse {
 			xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
 					"<response><type>"+type+"</type>"+
 					sender.toXmlFragment()+
-					"<client_plugin>./plugins/"+client_plugin+
+					"<client_plugin>"+client_plugin+
 					"</client_plugin>"+"<client_plugin_source>"+client_plugin_source+"</client_plugin_source>"+
 					"<raw>"+result+"</raw></response>";
 		}
-		 
+		
 		return xml;
 	}
 

@@ -14,7 +14,7 @@
 		<param_count>-1</param_count>
 		<param_regexp>n</param_regexp>
 		<client_plugin>libL3dConsole.so</client_plugin>
-		<client_plugin_source>http://3d-learning.comuv.com/plugins/libL3dConsole.so.1.0</client_plugin_source>
+		<client_plugin_source>http://localhost/plugins/libL3dConsole.so</client_plugin_source>
 		<executor>ro.utcluj.learning3d.server.TEST_COMMAND_Math_Adition</executor>
 	</command>
 	<command>
@@ -44,7 +44,7 @@
 		<param_count>1</param_count>
 		<param_regexp>1</param_regexp>
 		<client_plugin>libL3dConsole.so</client_plugin>
-		<client_plugin_source>http://3d-learning.comuv.com/plugins/libL3dConsole.so.1.0</client_plugin_source>
+		<client_plugin_source>http://localhost/plugins/libL3dConsole.so</client_plugin_source>
 		<executor>ro.utcluj.learning3d.server.SQL_PUT</executor>
 	</command>
 	<command>
@@ -54,7 +54,17 @@
 		<param_count>1</param_count>
 		<param_regexp>1</param_regexp>
 		<client_plugin>libL3dConsole.so</client_plugin>
-		<client_plugin_source>http://3d-learning.comuv.com/plugins/libL3dConsole.so.1.0</client_plugin_source>
+		<client_plugin_source>http://localhost/plugins/libL3dConsole.so</client_plugin_source>
 		<executor>ro.utcluj.learning3d.server.SQL_GET</executor>
+	</command>
+	<command>
+		<name>@get_resources</name>
+		<type>math</type>
+		<help>resources for the world</help>
+		<param_count>-1</param_count>
+		<param_regexp>n</param_regexp>
+		<client_plugin>libResources.so</client_plugin>
+		<client_plugin_source>http://localhost/plugins/libResources.so</client_plugin_source>
+		<executor>ro.utcluj.learning3d.server.ReturnWorldResources</executor>
 	</command>
 </commands>
