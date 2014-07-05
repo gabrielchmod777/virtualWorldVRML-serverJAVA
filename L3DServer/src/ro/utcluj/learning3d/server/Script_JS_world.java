@@ -30,7 +30,7 @@ public class Script_JS_world implements CommandTypeDependentInterpreter{
             
             library = readFile("./library.js", StandardCharsets.UTF_8);
             
-            System.out.println(">>>>> "+library);
+            //System.out.println(">>>>> "+library);
             javascript.append(library);
             String program = "";
             for(String line : params) {

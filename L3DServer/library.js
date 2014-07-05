@@ -9,7 +9,7 @@ function avatar(name, type) {
 	}
 	
 	this.move = function(mx, my,  mz) {
-		var toSend = "<client_plugin>libAvatar.so</client_plugin><client_plugin_source>http://localhost/plugins/libAvatar.so</client_plugin_source><action>move</action><other_user>"+name+"</other_user><avatar_type_id>"+this.type+"</avatar_type_id><x>"+mx+"</x><y>0</y><z>"+mz+"</z>";
+		var toSend = "<client_plugin>libAvatar.so</client_plugin><client_plugin_source>http://localhost/plugins/libAvatar.so</client_plugin_source><action>move</action><other_user>"+name+"</other_user><avatar_type_id>"+this.type+"</avatar_type_id><x>"+mx+"</x><y>"+my+"</y><z>"+mz+"</z>";
 		return toSend;
 	}
 

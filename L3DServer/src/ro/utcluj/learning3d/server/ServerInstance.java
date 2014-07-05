@@ -140,6 +140,8 @@ implements BasicServerOperations{
 			e.printStackTrace();
 			this.keepRunning = false;
 		}
+		
+		System.out.println("COMANDA :: "+line);
 		return line;
 	}
 
